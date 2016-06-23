@@ -64,6 +64,7 @@ $route['spy'] = 'spy';
 
 
 $route['translate/trans'] = 'translate/trans';
+$route['translate/update'] = 'translate/update';
 $route['translate/check'] = 'translate/check';
 $route['translate/(:any)'] = 'translate/view/$1';
 $route['translate'] = 'translate';

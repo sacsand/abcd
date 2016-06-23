@@ -44,7 +44,7 @@ class Hut extends CI_Controller {
 
         public function create()
         {
-            $data['title'] = 'Create a news item';
+            $data['title'] = 'Hut';
 
             $this->form_validation->set_rules('message', 'Message', 'required');
 
@@ -66,6 +66,7 @@ class Hut extends CI_Controller {
               $data['password'] = $trip_details->password;
               $data['message_id'] = $message_id;
               $data['german_content'] = $message_details->german_content;
+              $data['users'] =$this->trip_model->going_on($trip_details->trip_ID);
             //  $data['german_content'] = $message_details->german_content;
 
               $this->load->view('templates/header', $data);

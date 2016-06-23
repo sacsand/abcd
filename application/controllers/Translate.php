@@ -62,13 +62,19 @@ class Translate extends CI_Controller {
 
               $this->load->helper('form');
               $message_id=$this->input->post('message_id');
-              $data['messages'] = $this->message_model->get_message_all($message_id);
+
 
               //update englisg content
               $this->translate_model->trans_english();
 
-              $trip=$this->trip_model->get_trip_data($message_id,1,2);
-              $data['pasword'] = $trip->password;
+              //get updated message
+              $data['messages'] = $this->message_model->get_message_all($message_id);
+
+              //get newly created trip details
+              $trip=$this->trip_model->get_trip_data($message_id,2,3);
+              
+              $data['users'] =$this->trip_model->going_on($trip->trip_ID);
+              $data['password'] = $trip->password;
               $data['trip_id'] = $trip->trip_ID;
               $data['message_id'] =$message_id;
               $data['title'] = 'Traslate';

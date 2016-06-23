@@ -10,18 +10,18 @@
 <div class="row">
   <div class="col-lg-4">
       <div class="well well-lg">
-            Message ID : <?php echo $messages['message_ID'] ;?>
+            Message ID : <?php echo $messages['message_ID'];?>
       </div>
 
       <div class="well well-sm">
-           Inserted Time : <?php echo $messages['inserted_date_time'] ;?>
+           Inserted Time : <?php echo $messages['inserted_date_time'];?>
       </div>
       <div class="well well-sm">
-           Store Time : <?php echo $messages['stored_date_time'] ;?>
+           Store Time : <?php echo $messages['stored_date_time'];?>
       </div>
 
       <div class="well well-sm">
-           Stored Type : <?php echo $messages['stored_type'] ;?>
+           Stored Type : <?php echo $messages['stored_type'];?>
       </div>
 
 
@@ -35,7 +35,7 @@
     <h3 class="panel-title">German Message</h3>
   </div>
   <div class="panel-body">
-  <?php echo $messages['german_content'] ;?>
+  <?php echo $messages['german_content'];?>
   </div>
 </div>
 
@@ -48,7 +48,7 @@
    <h3 class="panel-title">English Message</h3>
  </div>
  <div class="panel-body">
-   <?php echo $messages['english_content'] ;?>
+   <?php echo $messages['english_content'];?>
  </div>
 </div>
 

@@ -48,7 +48,11 @@
    </thead>
    <tbody>
      <?php foreach ($messages_stored as $message): ?>
-     <tr class="<?php if($message['stored_type']==='significant'){echo 'success';}else{echo 'warning'; } ?>">
+     <tr class="<?php if ($message['stored_type'] === 'significant') {
+    echo 'success';
+} else {
+    echo 'warning';
+} ?>">
 
        <td><?php echo $message['message_ID']; ?></td>
        <td><?php echo $message['stored_date_time']; ?></td>

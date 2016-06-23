@@ -1,4 +1,4 @@
-ionTODO: trip 2 to 3 triger ,,anf update the leave time
+
 
   <div class="row">
     <div class="col-lg-12">
@@ -12,8 +12,9 @@ ionTODO: trip 2 to 3 triger ,,anf update the leave time
     <div class="col-lg-6">
         <div class="list-group">
             <a href="#" class="list-group-item active">  User Assigned</a>
-            <a href="#" class="list-group-item">user1 </a>
-            <a href="#" class="list-group-item">user2  </a>
+          <?php foreach ($users as $user): ?>
+            <a href="#" class="list-group-item"><?php echo $user['person_ID']; ?>  </a>
+          <?php endforeach;?>
         </div>
     </div>
     <div class="col-lg-4 col-lg-offset-1">
@@ -37,7 +38,11 @@ ionTODO: trip 2 to 3 triger ,,anf update the leave time
         <h3 class="panel-title">PASSWORD</h3>
       </div>
           <div class="panel-body">
-            Qw4hd-DQCRG-HKM64-GHUKL
+            <?php
+            if (!empty($password)) {
+                echo $password ;
+            }
+                  ?>
           </div>
     </div>
   </div>
@@ -46,7 +51,7 @@ ionTODO: trip 2 to 3 triger ,,anf update the leave time
       <div class="col-xs-6 col-md-4"> </div>
       <div class="col-xs-6 col-md-4">
       <?php echo form_open('translate/update', 'class="form-horizontal" id="myform"'); ?>
-      <input type="hidden" name="trip_id" value="<?php echo 'trip_id' ;?>">
+      <input type="hidden" name="trip_id" value="<?php echo 'trip_id';?>">
         <div class="form-group">
           <div class="col-lg-10 col-lg-offset-2">
             <button type="submit" class="btn btn-primary">Send</button>
