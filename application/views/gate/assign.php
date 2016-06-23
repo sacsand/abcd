@@ -1,4 +1,15 @@
 
+<div class="row">
+  <div class="col-lg-12">
+    <div class="page-header">
+      <h1 id="forms">Gate</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="well bs-component">
+
 <form action="<?php echo base_url(); ?>index.php/gate/assign" method="post">
 
     Select type:<br>
@@ -18,3 +29,7 @@
     <input type="submit" value="Submit">
     <br>
 </form>
+
+</div>
+</div>
+</div>

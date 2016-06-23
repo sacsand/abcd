@@ -1,4 +1,12 @@
 
+<div class="row">
+  <div class="col-lg-12">
+    <div class="page-header">
+      <h1 id="forms">Person</h1>
+    </div>
+  </div>
+</div>
+
 <form action="<?php echo base_url(); ?>index.php/person/add" method="post">
     First name:<br>
     <input type="text" name="first_name" value="Mickey" required="">
@@ -47,4 +55,3 @@
 
     <input type="submit" value="Submit">
 </form>
-

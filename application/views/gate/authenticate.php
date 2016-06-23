@@ -1,13 +1,22 @@
-
+<div class="row">
+  <div class="col-lg-12">
+    <div class="page-header">
+      <h1 id="forms">Gate</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="well bs-component">
 
 
 <form action="<?php echo base_url(); ?>index.php/gate/authenticate" method="post">
-    
+
     <div>
         Select Category<br>
         <select name="type">
-            <option>Select Category</option>
-            
+          <option>Select Category</option>
+
         <option value="military_commander">Military commander</option>
         <option value="public_servant">Public servant</option>
         <option value="storage_person">Storage Person</option>
@@ -16,9 +25,9 @@
         <option value="spy">Spy</option>
         </select>
     </div>
-   
+
     <br>
-   
+
     <div class="military_commander translator box">
     military ID<br>
     <input type="text" name="mid"  required="">
@@ -55,6 +64,9 @@
     <input type="submit" value="Submit">
     <br>
 </form>
+</div>
+</div>
+</div>
 
 <script type="text/javascript" src="<?php echo base_url();?>/js/jquery.js"></script>
 <script type="text/javascript">
