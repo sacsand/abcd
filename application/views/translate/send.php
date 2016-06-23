@@ -51,7 +51,7 @@
       <div class="col-xs-6 col-md-4"> </div>
       <div class="col-xs-6 col-md-4">
       <?php echo form_open('translate/update', 'class="form-horizontal" id="myform"'); ?>
-      <input type="hidden" name="trip_id" value="<?php echo 'trip_id';?>">
+      <input type="hidden" name="trip_id" value="<?php echo $trip_id;?>">
         <div class="form-group">
           <div class="col-lg-10 col-lg-offset-2">
             <button type="submit" class="btn btn-primary">Send</button>

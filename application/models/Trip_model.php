@@ -27,6 +27,7 @@ class Trip_model extends CI_Model
     public function update_trip($tag, $value = null)
     {
         if ($tag == 'leave_time') {
+            
             $trip_id = $this->input->post('trip_id');
             $this->db->set('leave_time', date('Y-m-d H:i:s', now()));
             $this->db->where('trip_ID', $trip_id);

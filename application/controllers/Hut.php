@@ -1,6 +1,5 @@
 <?php
 
-
 class Hut extends CI_Controller {
 
        public function __construct()
@@ -67,7 +66,7 @@ class Hut extends CI_Controller {
               $data['message_id'] = $message_id;
               $data['german_content'] = $message_details->german_content;
               $data['users'] =$this->trip_model->going_on($trip_details->trip_ID);
-            //  $data['german_content'] = $message_details->german_content;
+
 
               $this->load->view('templates/header', $data);
               $this->load->view('hut/send', $data);
@@ -93,29 +92,6 @@ class Hut extends CI_Controller {
 
 
         }
-
-/*
-        public function view_send()
-        {
-            $page='send';
-
-              $data['title'] = ucfirst($page); // Capitalize the first letter
-
-              $this->load->view('templates/header', $data);
-              $this->load->view('hut/'.$page, $data);
-              $this->load->view('templates/footer', $data);
-        }
-
-        public function get_message()
-       {
-
-          redirect('Hut/view_send');
-
-       }
-
-
-*/
-
 
 
 }

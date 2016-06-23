@@ -72,7 +72,7 @@ class Translate extends CI_Controller {
 
               //get newly created trip details
               $trip=$this->trip_model->get_trip_data($message_id,2,3);
-              
+
               $data['users'] =$this->trip_model->going_on($trip->trip_ID);
               $data['password'] = $trip->password;
               $data['trip_id'] = $trip->trip_ID;
